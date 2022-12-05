@@ -1,0 +1,470 @@
+.body {
+  background-color: rgb(255, 181, 0);
+}
+.nav {
+  width: 100%;
+  height: 5rem !important;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, rgb(255, 125, 0), rgb(255, 125, 0));
+}
+
+
+
+.Icon{
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.nav-icon {
+  font-size:3rem;
+  padding: 4rem;
+}
+
+nav a:hover {
+  background-color: rgb(255, 75, 0);
+  color: rgb(255, 181, 0);
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.v {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.nav-links a {
+  color: rgb(160, 20, 0);
+  font-size: 3rem;
+  text-decoration: none;
+  transition: all 2 linear;
+}
+
+.nav-links a:hover {
+  transform: translateY(0.5rem);
+  border-bottom: rgb(160, 20, 0);
+  color: rgb(160, 20, 0);
+  font-weight: normal;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)  */
+@media only screen and (min-width: 1200px) {
+  .nav {
+    height: 5rem;
+  }
+  
+  .nav-icon {
+    font-size: 4rem;
+    padding: 3;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    padding: 10px;
+    margin: 0;
+  }
+  .nav-links a {
+    font-size: 1.6rem;
+  }
+}
+.nav-links a {
+  color: rgb(160, 20, 0);
+  font-weight: bolder;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0s linear;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Banner */
+
+.body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(to right,  rgb(255, 181, 0),  rgb(255, 181, 0));
+  width: 100%;
+  font-family: "Tourney", cursive;
+  padding-bottom:20px;
+}
+
+.body p {
+  font-size: 3rem;
+  color: purple;
+}
+
+.bbtn {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border: navy 0.2rem solid;
+  text-decoration: none;
+  color: navy;
+  transition: all 0.3s linear;
+  border-radius: 1rem;
+}
+
+.bbtn:hover {
+  background: black;
+  color: rgb(255, 181, 0);
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)  */
+@media only screen and (min-width: 1200px) {
+  .body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgb(255, 181, 0), rgb(255, 181, 0));
+  }
+
+  .body p {
+    font-size: 3rem;
+    color: rgb(160, 20, 0);
+    font-weight: 900;
+  }
+
+  .bbtn {
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    border: navy 0.2rem solid;
+    text-decoration: none;
+    color: navy;
+    transition: all 0.3s linear;
+    border-radius: 1rem;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nav-icon {
+    font-size: 2rem;
+    padding: 0.7rem;
+  }
+
+  .nav-links {
+    width: 25%;
+  }
+
+  .nav-links a {
+    color: rgb(160, 20, 0);
+    font-weight: bolder;
+    font-size: 3rem;
+    text-decoration: none;
+    transition: all 0s linear;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .nav-links a:hover {
+    transform: translateY(-0.3rem);
+    border-bottom: rgb(160, 20, 0) solid 0.05rem;
+    color: rgb(160, 20, 0);
+    font-weight: normal;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .nav-icon {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75.55%;
+  }
+
+  .nav-links a {
+    color: #0090aa;
+    font-weight: bolder;
+    font-size: 0.75rem;
+    text-decoration: none;
+    transition: all 0.3s linear;
+  }
+
+  .nav-links a:hover {
+    transform: translateY(-0.3rem);
+    border-bottom: rgb(160, 20, 0) 0.05rem;
+    color: rgb(160, 20, 0);
+    font-weight: normal;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .nav-icon {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    width: 64%;
+  }
+  .nav-links a {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .nav-icon {
+    font-size: 2rem;
+    padding: 3rem;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+  }
+
+  .nav-links a {
+    color: #0090aa;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s linear;
+  }
+
+  .nav-links a:hover {
+    transform: translateY(-0.3rem);
+    border-bottom: rgb(160, 20, 0) solid 0.05rem;
+    color: rgb(160, 20, 0);
+    font-weight: normal;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)  */
+@media only screen and (min-width: 1200px) {
+  .nav {
+    height: 5rem;
+  }
+  
+  .nav-icon {
+    font-size: 4rem;
+    padding: 3;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    padding: 10px;
+    margin: 0;
+  }
+  .nav-links a {
+    font-size: 1.6rem;
+  }
+}
+.nav-links a {
+  color: rgb(160, 20, 0);
+  font-weight: bolder;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0s linear;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Banner */
+
+.body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(to right,  rgb(255, 181, 0),  rgb(255, 181, 0));
+  width: 100%;
+  font-family: "Tourney", cursive;
+  padding-bottom:20px;
+}
+
+.body p {
+  font-size: 3rem;
+  color: purple;
+}
+
+/* Responsive navbar */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .body p {
+    font-size: 1.5rem;
+    color: purple;
+  }
+
+  .bbtn {
+    padding: 0.5rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    border: navy 0.2rem solid;
+    text-decoration: none;
+    color: navy;
+    transition: all 0.3s linear;
+    border-radius: 1rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .body p {
+    font-size: 3rem;
+    color: purple;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgb(255, 181, 0), rgb(255, 181, 0));
+    width: 100%;
+  }
+
+  .body p {
+    font-size: 3rem;
+    color: purple;
+  }
+
+  .bbtn {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border: navy 0.2rem solid;
+    text-decoration: none;
+    color: navy;
+    transition: all 0.3s linear;
+    border-radius: 1rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .body p {
+    font-size: 3rem;
+    color: purple;
+  }
+
+  .bbtn {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border: navy 0.2rem solid;
+    text-decoration: none;
+    color: navy;
+    transition: all 0.3s linear;
+    border-radius: 1rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)  */
+@media only screen and (min-width: 1200px) {
+  .body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgb(255, 181, 0), rgb(255, 181, 0));
+  }
+
+  .body p {
+    font-size: 3rem;
+    color: rgb(160, 20, 0);
+    font-weight: 900;
+  }
+
+  .bbtn {
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    border: navy 0.2rem solid;
+    text-decoration: none;
+    color: navy;
+    transition: all 0.3s linear;
+    border-radius: 1rem;
+  }
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.img2{
+  float: right;
+}
+.img {
+  width: 40rem;
+}
+
+.row a {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  justify-content: center;
+  border-width: 0.5rem;
+  border-color: rgb(255, 118, 0);
+  border-style: double;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.img2{
+  float: right;
+}
+.img {
+  width: 40rem;
+  float:left
+}
+
+.row a {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  justify-content: center;
+  border-width: 0.5rem;
+  border-color: rgb(255, 118, 0);
+  border-style: double;
+}
+
+th {
+  border: rgb(255, 118, 0) 1rem double;
+}
+
+body {
+  background-color: rgb(255, 181, 0);
+}
